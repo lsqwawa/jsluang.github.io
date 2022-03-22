@@ -20,28 +20,32 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta property="og:type" content="website">
+  <meta name="description" content="前端可能用到的JavaScript工具方法​        本文中的一些方法并不全是本人所写，有一些也是从网上查询到的，仅在此进行总结。 1、根据url地址下载1234567891011121314151617181920212223const download &#x3D; (url) &#x3D;&gt; &amp;#123;    var isChrome &#x3D; navigator.userAgent.toLowerCa">
+<meta property="og:type" content="article">
 <meta property="og:title" content="言言堂">
-<meta property="og:url" content="http://example.com/index.html">
+<meta property="og:url" content="http://example.com/2022/03/22/%E5%89%8D%E7%AB%AF%E5%8F%AF%E8%83%BD%E7%94%A8%E5%88%B0%E7%9A%84JavaScript%E5%B7%A5%E5%85%B7%E6%96%B9%E6%B3%95/index.html">
 <meta property="og:site_name" content="言言堂">
+<meta property="og:description" content="前端可能用到的JavaScript工具方法​        本文中的一些方法并不全是本人所写，有一些也是从网上查询到的，仅在此进行总结。 1、根据url地址下载1234567891011121314151617181920212223const download &#x3D; (url) &#x3D;&gt; &amp;#123;    var isChrome &#x3D; navigator.userAgent.toLowerCa">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2022-03-22T07:50:28.977Z">
+<meta property="article:modified_time" content="2022-03-22T07:52:09.097Z">
 <meta property="article:author" content="xxlxl">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://example.com/">
+<link rel="canonical" href="http://example.com/2022/03/22/%E5%89%8D%E7%AB%AF%E5%8F%AF%E8%83%BD%E7%94%A8%E5%88%B0%E7%9A%84JavaScript%E5%B7%A5%E5%85%B7%E6%96%B9%E6%B3%95/">
 
 
 <script id="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome : true,
-    isPost : false,
+    isHome : false,
+    isPost : true,
     lang   : 'zh-CN'
   };
 </script>
 
-  <title>言言堂</title>
+  <title> | 言言堂</title>
   
 
 
@@ -139,9 +143,10 @@
         <div class="content-wrap">
           
 
-          <div class="content index posts-expand">
+          <div class="content post posts-expand">
             
-      
+
+    
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
@@ -157,10 +162,9 @@
       <meta itemprop="name" content="言言堂">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
+        <h1 class="post-title" itemprop="name headline">
           
-            <a href="/2022/03/22/%E5%89%8D%E7%AB%AF%E5%8F%AF%E8%83%BD%E7%94%A8%E5%88%B0%E7%9A%84JavaScript%E5%B7%A5%E5%85%B7%E6%96%B9%E6%B3%95/" class="post-title-link" itemprop="url">未命名</a>
-        </h2>
+        </h1>
 
         <div class="post-meta">
             <span class="post-meta-item">
@@ -184,7 +188,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h2 id="前端可能用到的JavaScript工具方法"><a href="#前端可能用到的JavaScript工具方法" class="headerlink" title="前端可能用到的JavaScript工具方法"></a>前端可能用到的JavaScript工具方法</h2><p>​        本文中的一些方法并不全是本人所写，有一些也是从网上查询到的，仅在此进行总结。</p>
+        <h2 id="前端可能用到的JavaScript工具方法"><a href="#前端可能用到的JavaScript工具方法" class="headerlink" title="前端可能用到的JavaScript工具方法"></a>前端可能用到的JavaScript工具方法</h2><p>​        本文中的一些方法并不全是本人所写，有一些也是从网上查询到的，仅在此进行总结。</p>
 <h4 id="1、根据url地址下载"><a href="#1、根据url地址下载" class="headerlink" title="1、根据url地址下载"></a>1、根据url地址下载</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="title function_">download</span> = (<span class="params">url</span>) =&gt; &#123;</span><br><span class="line">    <span class="keyword">var</span> isChrome = navigator.<span class="property">userAgent</span>.<span class="title function_">toLowerCase</span>().<span class="title function_">indexOf</span>(<span class="string">&#x27;chrome&#x27;</span>) &gt; -<span class="number">1</span>;</span><br><span class="line">    <span class="keyword">var</span> isSafari = navigator.<span class="property">userAgent</span>.<span class="title function_">toLowerCase</span>().<span class="title function_">indexOf</span>(<span class="string">&#x27;safari&#x27;</span>) &gt; -<span class="number">1</span>;</span><br><span class="line">    <span class="keyword">if</span> (isChrome || isSafari) &#123;</span><br><span class="line">        <span class="keyword">var</span> link = <span class="variable language_">document</span>.<span class="title function_">createElement</span>(<span class="string">&#x27;a&#x27;</span>);</span><br><span class="line">        link.<span class="property">href</span> = url;</span><br><span class="line">        <span class="keyword">if</span> (link.<span class="property">download</span> !== <span class="literal">undefined</span>) &#123;</span><br><span class="line">            <span class="keyword">var</span> fileName = url.<span class="title function_">substring</span>(url.<span class="title function_">lastIndexOf</span>(<span class="string">&#x27;/&#x27;</span>) + <span class="number">1</span>, url.<span class="property">length</span>);</span><br><span class="line">            link.<span class="property">download</span> = fileName;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span> (<span class="variable language_">document</span>.<span class="property">createEvent</span>) &#123;</span><br><span class="line">            <span class="keyword">var</span> e = <span class="variable language_">document</span>.<span class="title function_">createEvent</span>(<span class="string">&#x27;MouseEvents&#x27;</span>);</span><br><span class="line">            e.<span class="title function_">initEvent</span>(<span class="string">&#x27;click&#x27;</span>, <span class="literal">true</span>, <span class="literal">true</span>);</span><br><span class="line">            link.<span class="title function_">dispatchEvent</span>(e);</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span> (url.<span class="title function_">indexOf</span>(<span class="string">&#x27;?&#x27;</span>) === -<span class="number">1</span>) &#123;</span><br><span class="line">        url += <span class="string">&#x27;?download&#x27;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="variable language_">window</span>.<span class="title function_">open</span>(url, <span class="string">&#x27;_self&#x27;</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <h4 id="2、获取滚动的坐标"><a href="#2、获取滚动的坐标" class="headerlink" title="2、获取滚动的坐标"></a>2、获取滚动的坐标</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="title function_">getScrollPosition</span> = (<span class="params">el = <span class="variable language_">window</span></span>) =&gt; (&#123;</span><br><span class="line">    <span class="attr">x</span>: el.<span class="property">pageXOffset</span> !== <span class="literal">undefined</span> ? el.<span class="property">pageXOffset</span> : el.<span class="property">scrollLeft</span>,</span><br><span class="line">    <span class="attr">y</span>: el.<span class="property">pageYOffset</span> !== <span class="literal">undefined</span> ? el.<span class="property">pageYOffset</span> : el.<span class="property">scrollTop</span></span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
@@ -254,107 +258,30 @@
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">student = &#123;</span><br><span class="line">  <span class="attr">name</span>: <span class="string">&quot;Matt&quot;</span>,</span><br><span class="line">  <span class="attr">age</span>: <span class="number">29</span>,</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">// LONGER FORM</span></span><br><span class="line"><span class="keyword">let</span> name = student.<span class="property">name</span>;</span><br><span class="line"><span class="keyword">let</span> age = student.<span class="property">age</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">// SHORTHAND</span></span><br><span class="line"><span class="keyword">let</span> &#123; name, age &#125; = student;</span><br></pre></td></tr></table></figure>
 
 
-      
     </div>
 
     
     
     
+
       <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2022/03/22/%E5%89%8D%E7%AB%AF%E5%8F%AF%E8%83%BD%E9%81%87%E5%88%B0%E7%9A%84npm%E4%BE%9D%E8%B5%96%E5%AE%89%E8%A3%85%E7%9A%84%E9%97%AE%E9%A2%98/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="xxlxl">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="言言堂">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2022/03/22/%E5%89%8D%E7%AB%AF%E5%8F%AF%E8%83%BD%E9%81%87%E5%88%B0%E7%9A%84npm%E4%BE%9D%E8%B5%96%E5%AE%89%E8%A3%85%E7%9A%84%E9%97%AE%E9%A2%98/" class="post-title-link" itemprop="url">未命名</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2022-03-22 15:50:28 / 修改时间：15:49:51" itemprop="dateCreated datePublished" datetime="2022-03-22T15:50:28+08:00">2022-03-22</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h2 id="关于项目中关于node依赖的相关问题"><a href="#关于项目中关于node依赖的相关问题" class="headerlink" title="关于项目中关于node依赖的相关问题"></a>关于项目中关于node依赖的相关问题</h2><p>本文仅在于记录本人在项目依赖安装过程中遇到的一些问题的总结</p>
-<h3 id="npm-install时-报错-install-node-install-js安装失败"><a href="#npm-install时-报错-install-node-install-js安装失败" class="headerlink" title="npm install时,报错 install: node install.js安装失败"></a>npm install时,报错 install: <code>node install.js</code>安装失败</h3><p>npm install的时候报错：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">npm ERR! mozjpeg@7.0.0 postinstall: `node lib/install.js`</span><br><span class="line">npm ERR! Exit status 1</span><br><span class="line">npm ERR!</span><br><span class="line">npm ERR! Failed at the mozjpeg@7.0.0 postinstall script.</span><br><span class="line">npm ERR! This is probably not a problem with npm. There is likely additional logging output above.</span><br></pre></td></tr></table></figure>
-
-<p>解决方案：</p>
-<p>1、添加参数，忽略script</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install --ignore-scripts</span><br></pre></td></tr></table></figure>
-
-<p>2、更换数据源</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install chromedriver --chromedriver_cdnurl=http://cdn.npm.taobao.org/dist/chromedriver</span><br></pre></td></tr></table></figure>
-
-<h3 id="有关vue项目搭建用到的依赖安装"><a href="#有关vue项目搭建用到的依赖安装" class="headerlink" title="有关vue项目搭建用到的依赖安装"></a>有关vue项目搭建用到的依赖安装</h3><h4 id="1、webpack-bundle-analyzer插件"><a href="#1、webpack-bundle-analyzer插件" class="headerlink" title="1、webpack-bundle-analyzer插件"></a>1、webpack-bundle-analyzer插件</h4><p>读取输出文件夹（通常是dist）中的stats.json文件，把该文件可视化展现的插件。便于直观地比较各个bundle文件的大小，以达到优化性能的目的。</p>
-<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install webpack-bundle-analyzer --save-dev</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">webpackConfig.<span class="property">plugins</span>.<span class="title function_">push</span>(<span class="keyword">new</span> <span class="title class_">BundleAnalyzerPlugin</span>(&#123;</span><br><span class="line">...</span><br><span class="line">&#125;))</span><br></pre></td></tr></table></figure>
-
-<h4 id="2、压缩图片"><a href="#2、压缩图片" class="headerlink" title="2、压缩图片"></a>2、压缩图片</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i -D image-webpack-loader</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable language_">module</span>.<span class="property">exports</span> = &#123;</span><br><span class="line">  <span class="attr">chainWebpack</span>: <span class="function"><span class="params">config</span> =&gt;</span> &#123;</span><br><span class="line">      <span class="comment">// 压缩图片</span></span><br><span class="line">    config.<span class="property">module</span></span><br><span class="line">      .<span class="title function_">rule</span>(<span class="string">&#x27;images&#x27;</span>)</span><br><span class="line">      .<span class="title function_">use</span>(<span class="string">&#x27;image-webpack-loader&#x27;</span>)</span><br><span class="line">      .<span class="title function_">loader</span>(<span class="string">&#x27;image-webpack-loader&#x27;</span>)</span><br><span class="line">      .<span class="title function_">options</span>(&#123;</span><br><span class="line">        <span class="attr">mozjpeg</span>: &#123; <span class="attr">progressive</span>: <span class="literal">true</span>, <span class="attr">quality</span>: <span class="number">65</span> &#125;,</span><br><span class="line">        <span class="attr">optipng</span>: &#123; <span class="attr">enabled</span>: <span class="literal">false</span> &#125;,</span><br><span class="line">        <span class="attr">pngquant</span>: &#123; <span class="attr">quality</span>: <span class="string">&#x27;65-90&#x27;</span>, <span class="attr">speed</span>: <span class="number">4</span> &#125;,</span><br><span class="line">        <span class="attr">gifsicle</span>: &#123; <span class="attr">interlaced</span>: <span class="literal">false</span> &#125;,</span><br><span class="line">        <span class="attr">webp</span>: &#123; <span class="attr">quality</span>: <span class="number">75</span> &#125;</span><br><span class="line">      &#125;)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h4 id="3、去掉注释、去掉console-log"><a href="#3、去掉注释、去掉console-log" class="headerlink" title="3、去掉注释、去掉console.log"></a>3、去掉注释、去掉console.log</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i uglifyjs-webpack-plugin</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="title class_">UglifyJsPlugin</span> = <span class="built_in">require</span>(<span class="string">&#x27;uglifyjs-webpack-plugin&#x27;</span>) <span class="comment">// 去掉注释</span></span><br><span class="line"><span class="variable language_">module</span>.<span class="property">exports</span> = &#123;</span><br><span class="line">    <span class="attr">configureWebpack</span>: <span class="function"><span class="params">config</span> =&gt;</span> &#123;</span><br><span class="line">          <span class="keyword">const</span> myConfig = &#123;&#125;</span><br><span class="line">          <span class="keyword">if</span> (process.<span class="property">env</span>.<span class="property">NODE_ENV</span> === <span class="string">&#x27;production&#x27;</span>) &#123;</span><br><span class="line">          myConfig.<span class="property">plugins</span> = []</span><br><span class="line">          <span class="comment">// 去掉注释</span></span><br><span class="line">          <span class="comment">// 去掉注释</span></span><br><span class="line">          myConfig.<span class="property">plugins</span>.<span class="title function_">push</span>(</span><br><span class="line">            <span class="keyword">new</span> <span class="title class_">UglifyJsPlugin</span>(&#123;</span><br><span class="line">              <span class="attr">uglifyOptions</span>: &#123;</span><br><span class="line">                <span class="attr">output</span>: &#123;</span><br><span class="line">                  <span class="attr">comments</span>: <span class="literal">false</span>, <span class="comment">// 去掉注释</span></span><br><span class="line">                &#125;,</span><br><span class="line">                <span class="attr">compress</span>: &#123;</span><br><span class="line">                  <span class="attr">warnings</span>: <span class="literal">false</span>,</span><br><span class="line">                  <span class="attr">drop_console</span>: <span class="literal">true</span>,</span><br><span class="line">                  <span class="attr">drop_debugger</span>: <span class="literal">false</span>,</span><br><span class="line">                  <span class="attr">pure_funcs</span>: [<span class="string">&#x27;console.log&#x27;</span>]<span class="comment">//移除console</span></span><br><span class="line">              &#125;</span><br><span class="line">              &#125;</span><br><span class="line">            &#125;)</span><br><span class="line">          )</span><br><span class="line"></span><br><span class="line">      &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h4 id="4、使用commitizen来执行git提交规范"><a href="#4、使用commitizen来执行git提交规范" class="headerlink" title="4、使用commitizen来执行git提交规范"></a>4、使用commitizen来执行git提交规范</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">// 1.全局安装`commitizen`node模块  安装changelog，是生成changelog的工具</span><br><span class="line">npm install -g commitizen</span><br><span class="line">npm install -g conventional-changelog</span><br><span class="line">npm install -g conventional-changelog-cli</span><br><span class="line">// 2.在项目目录下运行命令</span><br><span class="line">commitizen init cz-conventional-changelog --save --save-exact</span><br><span class="line">// 3.此时可能会报找不到package.json的错误,使用下面命令来自动生成一个项目的package,然后在运行2中的命令.</span><br><span class="line">npm init --yes</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+        
 
 
-
-
-      
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2022/03/22/%E5%89%8D%E7%AB%AF%E5%8F%AF%E8%83%BD%E9%81%87%E5%88%B0%E7%9A%84npm%E4%BE%9D%E8%B5%96%E5%AE%89%E8%A3%85%E7%9A%84%E9%97%AE%E9%A2%98/" rel="prev" title="">
+      <i class="fa fa-chevron-left"></i> 
+    </a></div>
+      <div class="post-nav-item"></div>
     </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
       </footer>
+    
   </article>
   
   
-  
-
-
   
 
 
@@ -407,6 +334,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%89%8D%E7%AB%AF%E5%8F%AF%E8%83%BD%E7%94%A8%E5%88%B0%E7%9A%84JavaScript%E5%B7%A5%E5%85%B7%E6%96%B9%E6%B3%95"><span class="nav-number">1.</span> <span class="nav-text">前端可能用到的JavaScript工具方法</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1%E3%80%81%E6%A0%B9%E6%8D%AEurl%E5%9C%B0%E5%9D%80%E4%B8%8B%E8%BD%BD"><span class="nav-number">1.0.1.</span> <span class="nav-text">1、根据url地址下载</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2%E3%80%81%E8%8E%B7%E5%8F%96%E6%BB%9A%E5%8A%A8%E7%9A%84%E5%9D%90%E6%A0%87"><span class="nav-number">1.0.2.</span> <span class="nav-text">2、获取滚动的坐标</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3%E3%80%81%E6%BB%9A%E5%8A%A8%E5%88%B0%E9%A1%B6%E9%83%A8"><span class="nav-number">1.0.3.</span> <span class="nav-text">3、滚动到顶部</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4%E3%80%81%E5%B0%86%E9%98%BF%E6%8B%89%E4%BC%AF%E6%95%B0%E5%AD%97%E8%BD%AC%E6%8D%A2%E4%B8%BA%E4%B8%AD%E6%96%87%E5%A4%A7%E5%86%99"><span class="nav-number">1.0.4.</span> <span class="nav-text">4、将阿拉伯数字转换为中文大写</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5%E3%80%81%E6%95%B0%E7%BB%84%E6%8E%92%E5%BA%8F"><span class="nav-number">1.0.5.</span> <span class="nav-text">5、数组排序</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#6%E3%80%81%E6%95%B0%E7%BB%84%E5%8E%BB%E9%87%8D"><span class="nav-number">1.0.6.</span> <span class="nav-text">6、数组去重</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#7%E3%80%81%E5%8E%BB%E9%99%A4%E7%A9%BA%E6%A0%BC"><span class="nav-number">1.0.7.</span> <span class="nav-text">7、去除空格</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#8%E3%80%81%E5%A4%A7%E5%B0%8F%E5%86%99%E8%BD%AC%E6%8D%A2"><span class="nav-number">1.0.8.</span> <span class="nav-text">8、大小写转换</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#9%E3%80%81%E6%A3%80%E6%B5%8B%E5%AF%86%E7%A0%81%E5%BC%BA%E5%BA%A6"><span class="nav-number">1.0.9.</span> <span class="nav-text">9、检测密码强度</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#10%E3%80%81%E5%87%BD%E6%95%B0%E8%8A%82%E6%B5%81"><span class="nav-number">1.0.10.</span> <span class="nav-text">10、函数节流</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#11%E3%80%8116%E8%BF%9B%E5%88%B6%E9%A2%9C%E8%89%B2%E8%BD%ACRGBA%E5%AD%97%E7%AC%A6%E4%B8%B2"><span class="nav-number">1.0.11.</span> <span class="nav-text">11、16进制颜色转RGBA字符串</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#12%E3%80%81%E5%B9%B3%E6%BB%91%E7%9A%84%E6%BB%9A%E5%8A%A8%E5%88%B0%E9%A1%B5%E9%9D%A2%E9%A1%B6%E9%83%A8"><span class="nav-number">1.0.12.</span> <span class="nav-text">12、平滑的滚动到页面顶部</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#13%E3%80%81%E5%89%8D%E5%8F%B0%E7%94%9F%E6%88%90%E9%AA%8C%E8%AF%81%E7%A0%81%E5%B9%B6%E4%B8%94%E8%BF%9B%E8%A1%8C%E6%A0%A1%E9%AA%8C"><span class="nav-number">1.0.13.</span> <span class="nav-text">13、前台生成验证码并且进行校验</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#14%E3%80%81%E9%A1%B5%E9%9D%A2%E7%A6%81%E7%94%A8%E5%8F%B3%E9%94%AE%E8%8F%9C%E5%8D%95%E3%80%81F12%E9%94%AE%E3%80%81%E5%A4%8D%E5%88%B6%E3%80%81%E7%B2%98%E8%B4%B4%E3%80%81%E5%89%AA%E5%88%87%E3%80%81%E9%80%89%E4%B8%AD"><span class="nav-number">1.0.14.</span> <span class="nav-text">14、页面禁用右键菜单、F12键、复制、粘贴、剪切、选中</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#15%E3%80%81%E5%8D%95%E8%A1%8C%E5%86%99%E4%B8%80%E4%B8%AA%E8%AF%84%E7%BA%A7%E7%BB%84%E4%BB%B6"><span class="nav-number">1.0.15.</span> <span class="nav-text">15、单行写一个评级组件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#16%E3%80%81%E9%87%91%E9%92%B1%E6%A0%BC%E5%BC%8F%E5%8C%96"><span class="nav-number">1.0.16.</span> <span class="nav-text">16、金钱格式化</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#17%E3%80%81%E8%8E%B7%E5%8F%96%E5%BD%93%E5%89%8D%E6%97%B6%E9%97%B4"><span class="nav-number">1.0.17.</span> <span class="nav-text">17、获取当前时间</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#18%E3%80%81%E5%80%92%E8%AE%A1%E6%97%B6%E8%AE%A1%E7%AE%97"><span class="nav-number">1.0.18.</span> <span class="nav-text">18、倒计时计算</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#19%E3%80%81%E8%8E%B7%E5%8F%96%E5%9C%B0%E5%9D%80%E6%A0%8F%E7%9A%84%E5%8F%82%E6%95%B0%E5%80%BC"><span class="nav-number">1.0.19.</span> <span class="nav-text">19、获取地址栏的参数值</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#20%E3%80%81%E5%88%A4%E6%96%AD%E5%9C%A8PC%E7%AB%AF%E8%BF%98%E6%98%AF%E6%89%8B%E6%9C%BA%E7%AB%AF%E6%89%93%E5%BC%80%E6%B5%8F%E8%A7%88%E5%99%A8"><span class="nav-number">1.0.20.</span> <span class="nav-text">20、判断在PC端还是手机端打开浏览器</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#22%E3%80%81-%E4%BB%8E%E6%95%B0%E7%BB%84%E4%B8%AD%E6%9F%A5%E6%89%BE%E7%89%B9%E5%AE%9A%E5%85%83%E7%B4%A0"><span class="nav-number">1.0.21.</span> <span class="nav-text">22、 从数组中查找特定元素</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#23%E3%80%81%E9%BB%98%E8%AE%A4%E5%8A%9F%E8%83%BD%E5%8F%82%E6%95%B0"><span class="nav-number">1.0.22.</span> <span class="nav-text">23、默认功能参数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#24%E3%80%81%E5%B0%86%E5%AF%B9%E8%B1%A1%E7%9A%84%E5%80%BC%E6%94%B6%E9%9B%86%E5%88%B0%E6%95%B0%E7%BB%84%E4%B8%AD"><span class="nav-number">1.0.23.</span> <span class="nav-text">24、将对象的值收集到数组中</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#25%E3%80%81%E6%A3%80%E6%9F%A5%E4%B8%80%E4%B8%AA%E9%A1%B9%E7%9B%AE%E6%98%AF%E5%90%A6%E5%AD%98%E5%9C%A8%E4%BA%8E%E6%95%B0%E7%BB%84%E4%B8%AD"><span class="nav-number">1.0.24.</span> <span class="nav-text">25、检查一个项目是否存在于数组中</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#26%E3%80%81%E5%8E%8B%E7%BC%A9%E5%A4%9A%E4%B8%AA%E6%9D%A1%E4%BB%B6"><span class="nav-number">1.0.25.</span> <span class="nav-text">26、压缩多个条件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#27%E3%80%81-%E6%8C%87%E6%95%B0%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="nav-number">1.0.26.</span> <span class="nav-text">27、 指数运算符</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#28%E3%80%81-Math-floor-%E7%AE%80%E5%86%99"><span class="nav-number">1.0.27.</span> <span class="nav-text">28、 Math.floor() 简写</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#29%E3%80%81%E7%94%A8%E4%B8%80%E8%A1%8C%E4%BB%A3%E7%A0%81%E5%88%86%E9%85%8D%E5%A4%9A%E4%B8%AA%E5%80%BC"><span class="nav-number">1.0.28.</span> <span class="nav-text">29、用一行代码分配多个值</span></a></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
